@@ -1,0 +1,86 @@
+<script setup></script>
+
+<template>
+  <header>
+    <div class="container">
+      <div id="logo">
+        <img width="100px" src="https://static.tildacdn.com/tild3535-3466-4335-a638-663036326335/bmw-zeichen.png" alt="">
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/">Главная</a></li>
+          <li><a href="/phone">Телефоны</a></li>
+          <li><a href="/contact">Контакты</a></li>
+          <div class="auth-nav">
+          <li><a href="/single">Вход</a></li>
+          <li><a href="/registration">Регистрация</a></li>
+        </div>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <router-view />
+</template>
+
+<style scoped>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+#logo {
+    float: left;
+    font-size: 1.5em;
+}
+
+nav {
+    float: right;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 50px 0;
+    text-align: center;
+}
+</style>
